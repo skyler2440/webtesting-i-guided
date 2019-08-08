@@ -2,6 +2,8 @@ module.exports = {
   add,
 };
 
-function add() {
-  return null;
+function add(...args) {
+  return args.reduce((accu, curr) =>{
+    return accu + curr
+  }, 0);
 }
